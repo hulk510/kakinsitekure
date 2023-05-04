@@ -11,6 +11,7 @@
 		122FE57F2A0350E3007C7A3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122FE57E2A0350E3007C7A3E /* ContentView.swift */; };
 		122FE5812A0350E5007C7A3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122FE5802A0350E5007C7A3E /* Assets.xcassets */; };
 		122FE5852A0350E5007C7A3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122FE5842A0350E5007C7A3E /* Preview Assets.xcassets */; };
+		12FDE05B2A0397EF00ED2F64 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FDE05A2A0397EF00ED2F64 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		122FE5802A0350E5007C7A3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		122FE5822A0350E5007C7A3E /* kakinsitekure.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kakinsitekure.entitlements; sourceTree = "<group>"; };
 		122FE5842A0350E5007C7A3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12FDE05A2A0397EF00ED2F64 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12FDE05B2A0397EF00ED2F64 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 			children = (
 				122FE57B2A0350E3007C7A3E /* kakinsitekure */,
 				122FE57A2A0350E3007C7A3E /* Products */,
+				122FE58B2A039118007C7A3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +71,14 @@
 				122FE5842A0350E5007C7A3E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		122FE58B2A039118007C7A3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12FDE05A2A0397EF00ED2F64 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = kakinsitekure/kakinsitekure.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kakinsitekure/Preview Content\"";
@@ -284,10 +297,13 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MMMM.kakinsitekure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MMMM.kakinsitekudasai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = kakinsitekure/kakinsitekure.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kakinsitekure/Preview Content\"";
@@ -322,10 +339,13 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MMMM.kakinsitekure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MMMM.kakinsitekudasai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
